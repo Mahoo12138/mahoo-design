@@ -19,7 +19,7 @@ const testVerProps: MenuProps = {
   mode: "vertical",
 };
 
-const generateMenu = (props: MenuProps) => {
+const generateMenu2 = (props: MenuProps) => {
   return (
     <Menu {...props}>
       <MenuItem index={0}>active</MenuItem>
@@ -27,6 +27,18 @@ const generateMenu = (props: MenuProps) => {
         disabled
       </MenuItem>
       <MenuItem index={2}>Click Item</MenuItem>
+    </Menu>
+  );
+};
+const generateMenu = (props: MenuProps) => {
+  return (
+    <Menu {...props}>
+      <MenuItem >active</MenuItem>
+      <MenuItem  disabled>
+        disabled
+      </MenuItem>
+      <MenuItem >Click Item</MenuItem>
+      <li>ListItem</li>
     </Menu>
   );
 };
